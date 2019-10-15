@@ -17,17 +17,16 @@
       </div>
       <nav class="navigation navigation__header">
         <ul class="menu">
-          <li class="menu__list"><a class="menu__link" href="#">home</a></li>
+          <li class="menu__list"><a class="menu__link menu__link--home" href="#">home</a></li>
           <li class="menu__list"><a class="menu__link" href="#">projects</a></li>
           <li class="menu__list"><a class="menu__link" href="#">measurement</a></li>
           <li class="menu__list"><a class="menu__link" href="#">team</a></li>
           <li class="menu__list"><a class="menu__link" href="#">reviews</a></li>
           <li class="menu__list"><a class="menu__link" href="#">contacts</a></li>
-          <li class="menu__list"><a class="menu__link" href="#">contacts</a></li>
         </ul>
       </nav>
       <div class="contact">
-        <a class="contact__phone" href="tel:+7(928)768-32-39">+7 (928) 768-32-39</a>
+        <a class="contact__phone contact__phone--mobile" href="tel:+7(928)768-32-39">+7 (928) 768-32-39</a>
         <button class="contact__request">request a call</button>
       </div>
     </div>
@@ -36,72 +35,90 @@
   <main>
     <div class="s1">
       <aside class="sidebar">
-        <p><a href="#">instagram</a></p>
+        <p class="sidebar__word-instagram"><a class="sidebar_link" href="#">instagram</a></p>
       </aside>
       <div class="section1">
         <div class="section1__turnkey-repair">
           <p class="section1__turnkey-repair_header">Turnkey Repair in the
-            city of Rostov-on-Don</p>
-          <p class="section1__turnkey-repair_description">Get ready-made turnkey repairs on time
+            city of <span class="section1__turnkey-repair_header--orange">Rostov-on-Don</span></p>
+          <p class="section1__turnkey-repair_description">Get ready-made turnkey repairs on time <br>
             with work time saving up to 45 days and 20% from
             cost of materials due to the organization of work</p>
-          <button class="section1__turnkey-repair_buttcalcul">calculate the cost</button>
-          <button class="section1__turnkey-repair_buttsubmit">submit your application</button>
+          <button class="section1__turnkey-repair--buttcalcul">
+            <p>calculate the cost</p>
+          </button>
+          <button class="section1__turnkey-repair--buttsubmit">
+            <p class="for-big-screens">submit your application</p>
+            <p class="for-mobile">application</p>
+          </button>
         </div>
       </div>
     </div>
-
     <div class="s2">
+      <div class="scroll-down">
+        <div class="scroll-down_content">
+          <p>Scroll down</p>
+          <img src="assets/images/scroll down.svg">
+        </div>
+      </div>
       <div class="s2__navbar">
         <ul class="s2__navbar_menu">
-          <li><a class="s2__navbar_link" href="#">rostov-on-don,admiral</a></li>
+          <li><a class="s2__navbar_link--active" href="#">rostov-on-don,admiral</a></li>
           <li><a class="s2__navbar_link" href="#">Sochi Thieves</a></li>
           <li><a class="s2__navbar_link" href="#">Rostov-on-Don Patriotic</a></li>
         </ul>
       </div>
       <div class="s2__projects">
         <div class="s2__description">
-          <p>Completed projects</p>
-          <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the
+          <p class="s2__description_header">Completed projects <img src="assets/images/Rectangle 6.2.png"></p>
+          <p class="s2__description_only">Only a small part of the work performed by our company is presented on the
+            site. For 14 years on in the
             construction
             market we have made happy more than 1000 families</p>
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <p>City:</p>
-                  <p>Rostov-on-Don
-                    LCD admiral</p>
-                </td>
-                <td>
-                  <p>apartment area:</p>
-                  <p>81 m2</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>Repair time:</p>
-                  <p>3.5 months</p>
-                </td>
-                <td>
-                  <p>Repair Cost:</p>
-                  <p>Upon request</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="photo1">
-        </div>
-        <div class="photo2">
+          <div class="grid">
+            <div class="grid__item--marked">City:</div>
+            <div class="grid__item--marked">apartment area:</div>
+            <div class="grid__item">
+              <p>Rostov-on-Don</p>
+              <p>LCD admiral</p>
+            </div>
+            <div class="grid__item">81 m2</div>
+            <div class="grid__item--marked">Repair time:</div>
+            <div class="grid__item--marked">Repair Cost:</div>
+            <div class="grid__item">3.5 months</div>
+            <div class="grid__item">Upon request</div>
           </div>
+        </div>
+        <div class="s2__projects_slider1">
+          <div class="s2__projects_slider1_content">
+            <div class="s2__projects_slider1--slide-1"></div>
+            <div class="s2__projects_slider1--slide-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="s2__last-block">
+        <p>online control</p>
+        <img src="assets/images/camera.svg">
+      </div>
+      <div class="s2__video">
+        <div class="s2__video_content">
+          <iframe width="100%" height="443" src="https://www.youtube.com/embed/XKA-FX6ie8k" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
-
-
+    <div class="s3">
+      <img class="s3_line" src="assets/images/Rectangle 6.9.png" alt="line">
+      <div class="s3__about-camera">
+        <p>At each facility, a camera is installed that broadcasts the progress
+          of work on the clock. At any time, you can go
+          to our website and monitor the progress of work in your apartment.
+          You can watch the live broadcast from one of our facilities!<br>
+          Leave a request below and you will receive a link to the broadcast.</p>
+      </div>
+      <input type="checkbox" name="option[]" id="option-1" value="option1" required /> option1
+    </div>
   </main>
-
-
 
   <footer class="footer part__footer">
     <div class="navcontent__footer">
@@ -125,10 +142,5 @@
       </div>
     </div>
   </footer>
-
-
-
-
 </body>
-
 </html>
